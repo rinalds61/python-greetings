@@ -8,5 +8,6 @@ def greetings():
     return jsonify({"greeting": "Hello from Python App!"})
 
 if __name__ == '__main__':
-    port1 = process.env.PORT
-    app.run(host="0.0.0.0", debug=True, port=port1)
+    # Fetching the port from the environment variable NODE_PORT
+    port = int(os.environ.get('NODE_PORT', 5000))
+    app.run(host="0.0.0.0", debug=True, port=port)
