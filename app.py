@@ -9,5 +9,5 @@ def greetings():
 
 if __name__ == '__main__':
     # Fetching the port from the environment variable NODE_PORT
-    port = int(os.environ.get('NODE_PORT', 5000))
-    app.run(host="0.0.0.0", debug=True, port=port)
+    port1 = os.environ.get('NODE_PORT', 5000)
+    app.run(host="0.0.0.0", debug=True, port=port1)
