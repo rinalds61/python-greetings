@@ -9,7 +9,7 @@ def greetings():
 
 if __name__ == '__main__':
     # Set the PORT environment variable within the script
-    os.environ['PORT'] = '7002'
+    #os.environ['PORT'] = '7002'
     
     # Now the Flask app will use the port specified in the PORT environment variable
     port = int(os.environ.get('PORT', 7001))  # Get port from environment variable, defaulting to 7001
