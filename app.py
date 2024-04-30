@@ -8,9 +8,6 @@ def greetings():
 
 if __name__ == '__main__':
     import argparse
-    port1 = int(os.environ.get('PORT', 5000))
-   # parser = argparse.ArgumentParser()
-    #parser.add_argument('--port', default=5000, type=int, help='Port to run the server on.')
-    #args = parser.parse_args()
-    
-    app.run(debug=True, host='0.0.0.0', port=port1)
+    port = int(os.environ.get('PORT', 5000))
+    # ... rest of the code for argument parsing or environment variable usage
+    app.run(debug=True, host='0.0.0.0', port=port)
